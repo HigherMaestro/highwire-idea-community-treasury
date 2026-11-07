@@ -1,0 +1,26 @@
+{
+  "name": "community-treasury",
+  "private": true,
+  "type": "module",
+  "description": "An agent that launches a coin whose creator fees fill a treasury, claims them every day, posts the books on the coin's page, and drafts payouts to wallets you chose, which you approve.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "highwire": "node scripts/highwire.mjs",
+    "orders": "node scripts/highwire.mjs orders run",
+    "agent": "tsx src/agent.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "highwire-agent": "0.11.0",
+    "highwire-mcp": "0.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3"
+  }
+}
