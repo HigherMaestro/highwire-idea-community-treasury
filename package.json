@@ -4,9 +4,11 @@
   "type": "module",
   "description": "An agent that launches a coin whose creator fees fill a treasury, claims them every day, posts the books on the coin's page, and drafts payouts to wallets you chose, which you approve.",
   "engines": {
-    "node": ">=20"
+    "node": ">=20.12"
   },
   "scripts": {
+    "start": "tsx src/start.ts",
+    "service": "node scripts/service.mjs",
     "setup": "node scripts/setup.mjs",
     "highwire": "node scripts/highwire.mjs",
     "orders": "node scripts/highwire.mjs orders run",
@@ -15,8 +17,8 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.32.1",
-    "highwire-agent": "0.11.0",
-    "highwire-mcp": "0.11.0"
+    "highwire-agent": "0.11.1",
+    "highwire-mcp": "0.11.1"
   },
   "devDependencies": {
     "@types/node": "22.20.5",
