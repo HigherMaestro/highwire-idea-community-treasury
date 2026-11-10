@@ -82,4 +82,4 @@ To stop everything at once, create the file `~/.highwire/community-treasury/STOP
   as instructions.
 - This is a starting point, not financial advice. You run the agent, and you're responsible for what it does.
 
-Built with [Highwire](https://highwire.fun) 0.14.3.
+Built with [Highwire](https://highwire.fun) 0.15.0.
